@@ -1,4 +1,4 @@
-var movingRight = setInterval(moveRight, 50);
+var movingRight = setInterval(moveRight, 5);
 var counter = 0;
 var novingDown;
 function moveRight() {
@@ -6,7 +6,7 @@ function moveRight() {
   if (counter == 150) {
     clearInterval(movingRight);
     counter = 0;
-    novingDown = setInterval(moveDown, 50);
+    novingDown = setInterval(moveDown, 5);
   }
 }
 var movingLeft;
@@ -15,7 +15,7 @@ function moveDown() {
   if (counter == 150) {
     clearInterval(novingDown);
 
-    movingLeft = setInterval(moveLeft, 50);
+    movingLeft = setInterval(moveLeft, 5);
   }
 }
 var movingUp;
@@ -24,7 +24,7 @@ function moveLeft() {
   if (counter == 0) {
     clearInterval(movingLeft);
     counter = 150;
-    movingUp = setInterval(moveUp, 50);
+    movingUp = setInterval(moveUp, 5);
   }
 }
 
